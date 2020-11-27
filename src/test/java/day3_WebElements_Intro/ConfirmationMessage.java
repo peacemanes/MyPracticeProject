@@ -28,8 +28,10 @@ public class ConfirmationMessage {
             System.out.println("expectedEmail = " + expectedEmail);
         }
 
-        WebElement retrieveButton=driver.findElement(By.id("form_submit"));
-        retrieveButton.click();
+        //WebElement retrieveButton=driver.findElement(By.id("form_submit"));
+        //retrieveButton.click();
+        driver.findElement(By.id("form_submit")).click();
+
         String exepectedMessage="Your e-mail's been sent!";
         WebElement messageElement=driver.findElement(By.name("confirmation_message"));
 
