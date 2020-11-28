@@ -22,5 +22,10 @@ public class AmazonSearchNumbers {
 
         System.out.println(text.getText());
 
+        WebElement parentindex=driver.findElement(By.xpath("//*[@*='button2()']/../button[5]"));
+        WebElement parentindex2=driver.findElement(By.xpath("//*[@*='button2()']/../p"));
+
+
+
     }
 }
