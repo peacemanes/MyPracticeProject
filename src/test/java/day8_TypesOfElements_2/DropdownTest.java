@@ -33,8 +33,11 @@ public class DropdownTest {
             WebDriver driver= WebDriverFactory.getDriver("chrome");
             driver.get("http://practice.cybertekschool.com/dropdown");
 
-            WebElement dropdownElement=driver.findElement(By.id("state"));
-            Select stateList= new Select(dropdownElement);
+            //WebElement dropdownElement=driver.findElement(By.id("state"));
+           //Select stateList= new Select(dropdownElement);
+
+          //  WebElement dropdownElement=driver.findElement(By.id("state"));
+            Select stateList= new Select(driver.findElement(By.id("state")));
 
             String expectedOption="Select a State";
             String actualOption=stateList.getFirstSelectedOption().getText();
